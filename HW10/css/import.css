@@ -235,12 +235,14 @@ table {
     padding-left: 10px;
     position: absolute; }
   .top header #site-navigation {
-    display: block; }
+    display: block;
+    height: auto; }
     .top header #site-navigation > label {
       margin-top: 20px; }
     .top header #site-navigation > input:checked + #main-menu {
       top: 60px;
-      position: relative; }
+      position: relative;
+      z-index: 1; }
     .top header #site-navigation ul li {
       display: block;
       padding: 0 20px;
@@ -256,9 +258,12 @@ table {
       margin: 0; }
   .top .top__carousel .top__carousel-box {
     max-width: 300px;
-    max-height: 400px; }
+    max-height: 400px;
+    z-index: 100; }
     .top .top__carousel .top__carousel-box .slides {
       margin-bottom: 60px; }
+      .top .top__carousel .top__carousel-box .slides li {
+        z-index: 5; }
       .top .top__carousel .top__carousel-box .slides .slide {
         margin: 0; }
         .top .top__carousel .top__carousel-box .slides .slide h1 {

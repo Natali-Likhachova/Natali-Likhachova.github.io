@@ -235,6 +235,7 @@
       }
       #site-navigation{
         display: block;
+        height: auto;
         > {
           input {
           }
@@ -244,7 +245,7 @@
           input:checked + #main-menu {
             top: 60px;
             position: relative;
-
+            z-index: 1;
           }
         }
         ul li {
@@ -264,8 +265,12 @@
       .top__carousel-box{
         max-width: 300px;
         max-height: 400px;
+        z-index: 100;
         .slides{
           margin-bottom: 60px;
+          li{
+            z-index: 5;
+          }
           .slide{
             margin: 0;
             h1{
