@@ -635,9 +635,32 @@ table {
           line-height: 24px;
           color: #a1ca6c; }
         .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .social a {
-          text-decoration: none; }
-        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .social img {
-          margin: 0 5px; }
+          text-decoration: none;
+          margin-right: 10px; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .social .icon_facebook {
+          background-color: #92798F;
+          padding: 6px 7px 6px 10px;
+          border-radius: 50%; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .social .icon_twitter {
+          background-color: #92798F;
+          padding: 6px 4px 6px 8px;
+          border-radius: 50%; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .social .icon_google {
+          background-color: #92798F;
+          padding: 6px 1px 6px 5px;
+          border-radius: 50%; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .social .icon_linkedin {
+          background-color: #92798F;
+          padding: 6px 7px 6px 9px;
+          border-radius: 50%; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .fa-facebook {
+          color: #eee; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .fa-twitter {
+          color: #eee; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .icon_google {
+          color: #eee; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box .icon_linkedin {
+          color: #eee; }
         .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box:hover p {
           color: #DF5C64; }
         .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box:hover .first_person {
@@ -648,6 +671,14 @@ table {
           content: url("../img/About/person hover.png"); }
         .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box:hover .fourth_person {
           content: url("../img/About/person hover.png"); }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box:hover .icon_facebook {
+          background-color: #4F689E; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box:hover .icon_twitter {
+          background-color: #74C7D5; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box:hover .icon_google {
+          background-color: #DF5C64; }
+        .about .about__content .about__content_information .about__content_information-list .about__content_information-list-box:hover .icon_linkedin {
+          background-color: #3E61AF; }
 
 @media screen and (max-width: 900px) {
   .about {

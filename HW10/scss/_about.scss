@@ -145,10 +145,40 @@
           .social{
             a{
               text-decoration: none;
+              margin-right: 10px;
             }
-            img{
-              margin: 0 5px;
+            .icon_facebook{
+              background-color: #92798F;
+              padding: 6px 7px 6px 10px;
+              border-radius: 50%;
             }
+            .icon_twitter{
+              background-color: #92798F;
+              padding: 6px 4px 6px 8px;
+              border-radius: 50%;
+            }
+            .icon_google{
+              background-color: #92798F;
+              padding: 6px 1px 6px 5px;
+              border-radius: 50%;
+            }
+            .icon_linkedin{
+              background-color: #92798F;
+              padding: 6px 7px 6px 9px;
+              border-radius: 50%;
+            }
+          }
+          .fa-facebook {
+            color: #eee;
+          }
+          .fa-twitter {
+            color: #eee;
+          }
+          .icon_google{
+            color: #eee;
+          }
+          .icon_linkedin{
+            color: #eee;
           }
           &:hover p{
             color: #DF5C64;
@@ -164,6 +194,18 @@
           }
           &:hover .fourth_person{
             content: url("../img/About/person hover.png") ;
+          }
+          &:hover .icon_facebook{
+            background-color: #4F689E;
+          }
+          &:hover .icon_twitter{
+            background-color: #74C7D5;
+          }
+          &:hover .icon_google{
+            background-color: #DF5C64;
+          }
+          &:hover .icon_linkedin{
+            background-color: #3E61AF;
           }
         }
       }
