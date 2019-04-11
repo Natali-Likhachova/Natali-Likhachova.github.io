@@ -1,0 +1,33 @@
+.wrapper {
+    width: 1022px;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+table {
+    border-spacing: 3px;
+    margin: 6px auto 21px;
+    border: 1px outset;
+    width: 1010px;
+}
+td, th {
+    padding: 3px;
+    border: 1px inset;
+}
+.batman table {
+    width: 600px;
+}
+
+.joker table{
+    width: 600px;
+    border-spacing: 0;
+    border: 2px solid #9a9a9a;
+}
+
+.joker  td {
+    vertical-align: text-top;
+}
+
+.joker th {
+    text-align: left;
+}
