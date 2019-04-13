@@ -1,0 +1,34 @@
+.sponsors{
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  .sponsors_sign{
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .sponsors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .sponsors_sign{
+      padding: 20px 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  .sponsors{
+    display: flex;
+    flex-direction: column;
+    .sponsors_sign{
+      padding: 25px 0;
+    }
+  }
+}

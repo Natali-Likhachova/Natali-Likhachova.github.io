@@ -1,0 +1,112 @@
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .contact_maps{
+    height: 650px;
+    width: 550px;
+  }
+  .contact_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/2-layers (6).png") no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: 700px;
+    .contact_form-line{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 10px;
+      label{
+        margin-right: 30px;
+        @include white_text;
+      }
+      input{
+        width: 300px;
+        height: 45px;
+        border: 1px solid #fff;
+        border-radius: 2px;
+        background-color: transparent;
+      }
+      .contact_form-line-up{
+        margin-bottom: 100px;
+      }
+      #textarea{
+        width: 300px;
+        height: 145px;
+      }
+    }
+    .contact_button{
+      float: right;
+      margin-right: 10px;
+      width: 130px;
+      height: 45px;
+      color: #e8e8e8;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 36px;
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      border-radius: 2px;
+      background-repeat: no-repeat;
+      background-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 900px){
+  .contact{
+    background-color: #63524E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .contact_maps{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .contact_maps{
+      display: none;
+    }
+    .contact_form{
+      width: 320px;
+      height: 520px;
+      .contact_form-line{
+        justify-content: space-around;
+        margin: 10px 5px;
+        label {
+          margin-right: 20px;
+        }
+        input{
+          width: 200px;
+          height: 35px;
+          border: 1px solid #fff;
+          border-radius: 2px;
+          background-color: transparent;
+        }
+        .contact_form-line-up{
+          margin-bottom: 50px;
+        }
+        #textarea{
+          width: 200px;
+          height: 75px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@mixin headline{
+  font: {
+    family: 'Open Sans', sans-serif;
+    size: 22px;
+    weight: 800;
+  }
+  color: #29323c;
+}
+@mixin small-gray-font{
+  font: {
+    family: 'Open Sans', sans-serif;
+    size: 14px;
+    weight: 400;
+  }
+  color: #29323c;
+  line-height: 30px;
+}
+@mixin small_header{
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: 16px;
+    weight: 700;
+  }
+  color: #29323c;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+@mixin small-dark-font{
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: 15px;
+    weight: 700;
+  }
+  color: #29323c;
+  line-height: 20px;
+}
+@mixin bottom_dark{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-color: #485563;
+}
+@mixin white_text{
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: 14px;
+    weight: 400;
+  }
+  color: #fff;
+  line-height: 36px;
+
+}
