@@ -1,0 +1,197 @@
+.blog{
+  background: #E3E3E3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  .blog__text{
+    text-align: center;
+    max-width: 1000px;
+    h2{
+      @include style_headline;
+    }
+    img{
+      padding: 30px 0 40px;
+    }
+    p{
+      padding-bottom: 50px;
+      font-family: $third-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 1.4px;
+    }
+  }
+  .blog__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .blog__list_box{
+      background: #2D2D2F;
+      width: 50%;
+      display: flex;
+      img{
+        width: 50%;
+        height: 50%;
+      }
+      .blog__list_box-text{
+        padding: 30px 20px;
+        h5{
+          color: #e3e3e3;
+          font-family: $third-font;
+          font-size: 12px;
+          font-style: italic;
+          line-height: 18px;
+        }
+        .blog-line::before {
+          margin: 10px 0;
+          content: '';
+          display: block;
+          height: 1px;
+          background-color: #949494;
+          width: 160px;
+        }
+        h6{
+          padding-bottom: 15px;
+          color: #e3e3e3;
+          font-family: $main-font;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 18px;
+          text-transform: uppercase;
+          letter-spacing: 1.47px;
+          img{
+            height: 7px;
+            width: 4px;
+          }
+        }
+        p{
+          color: #949494;
+          font-family: $third-font;
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 1.1px;
+        }
+      }
+      .additional{
+        background: #555557;
+        .blog-line::before {
+          background-color: #454545;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  .blog{
+    .blog__text{
+      p{
+        max-width: 900px;
+      }
+    }
+    .blog__list{
+      .blog__list_box{
+        img{
+          width: 45%;
+          height: 45%;
+        }
+        .blog__list_box-text{
+          padding: 15px;
+          h5{}
+          .blog-line::before {
+            margin: 5px 0;
+          }
+          h6{
+            padding-bottom: 10px;
+            font-size: 9px;
+          }
+          p{
+            line-height: 15px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .blog{
+    .blog__text{
+      p{
+        max-width: 700px;
+        line-height: 20px;
+      }
+    }
+    .blog__list{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .blog__list_box{
+        width: 100%;
+        img{
+          width: 50%;
+          height: 50%;
+        }
+        .blog__list_box-text{
+          padding: 40px 25px;
+          h5{}
+          .blog-line::before {
+            margin: 15px 0;
+          }
+          h6{
+            padding-bottom: 10px;
+            line-height: 18px;
+          }
+          p{
+            font-size: 11px;
+            line-height: 18px;
+            letter-spacing: 1.1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .blog{
+    .blog__text{
+      p{
+        max-width: 300px;
+      }
+    }
+    .blog__list{
+      .blog__list_box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        .blog__list_box-text{
+          padding: 40px 25px;
+          h5{}
+          .blog-line::before {
+            margin: 15px 0;
+          }
+          h6{
+            padding-bottom: 10px;
+            line-height: 18px;
+          }
+          p{
+            font-size: 11px;
+            line-height: 18px;
+            letter-spacing: 1.1px;
+          }
+        }
+      }
+    }
+  }
+}

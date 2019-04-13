@@ -1,0 +1,138 @@
+.prices{
+  background-color: #E3E3E3;
+  padding-bottom: 50px;
+  .prices__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    h2{
+      padding-bottom: 20px;
+      @include style_headline;
+    }
+    p{
+      margin: 40px 0;
+      max-width: 1000px;
+      text-align: center;
+      @include main_text;
+    }
+  }
+  .prices__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .prices__list_box{
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 550px;
+      margin: 0 10px;
+      h5{
+        padding: 30px 0;
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.47px;
+      }
+      .prices__list_box-pri{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 20px 0 30px;
+        .pri-small{
+          color: $main-color;
+          font-family: $main-font;
+          font-size: 28px;
+          font-weight: 500;
+        }
+        .pri-big{
+          color: $main-color;
+          font-family: $main-font;
+          font-size: 70px;
+          font-weight: 700;
+        }
+      }
+      .pri-main{
+        color: $main-color;
+        font-family: $third-font;
+        font-size: 16px;
+        font-style: italic;
+        line-height: 30px;
+      }
+      .prices__list_box-btn{
+        margin: 50px 0;
+        width: 135px;
+        height: 40px;
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 13px;
+        font-weight: 700;
+        border: 2px solid $main-color;
+        background-repeat: no-repeat;
+        background-color: #fff;
+      }
+      &:hover .button{
+        color: #fff;
+        background-color: $main-color;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  .prices{
+    .prices__text{
+      p{
+        max-width: 900px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .prices{
+    .prices__text{
+      p{
+        max-width: 700px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .prices{
+    .prices__text{
+      p{
+        max-width: 300px;
+      }
+    }
+    .prices__list{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .prices__list_box{
+        margin: 10px 0;
+        width: 280px;
+        height: 450px;
+        h5{
+          padding: 20px 0;
+        }
+        .prices__list_box-pri{
+          padding: 10px 0 20px;
+        }
+        .pri-main{
+          line-height: 18px;
+        }
+        .prices__list_box-btn{
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}

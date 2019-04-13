@@ -1,0 +1,37 @@
+.with__top{
+  background: url("../img/with__top/Image.png")no-repeat;
+  background-size: cover;
+  height: 396px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1{
+    @include style_headline;
+    color: #fff;
+    font-size: 46px;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 0.89px;
+  }
+  p{
+    color: #fff;
+    font-family: $third-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1.4px;
+  }
+}
+@media screen and (max-width: 575.98px){
+  .with__top{
+    h1{
+      text-align: center;
+      font-size: 32px;
+      line-height: 40px;
+    }
+    img{
+      zoom: 80%;
+    }
+  }
+}
