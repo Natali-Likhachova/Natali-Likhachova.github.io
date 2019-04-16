@@ -1,0 +1,31 @@
+.up_about{
+  background: url("../img/about/up_about/3-layers.png") no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1{
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+  }
+  .up_about-subtitle{
+    a{
+      text-decoration: none;
+      color: $main-color;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+      &:hover{
+        color: $top-color;
+      }
+    }
+  }
+}

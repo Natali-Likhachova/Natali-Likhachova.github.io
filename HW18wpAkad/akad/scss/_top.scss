@@ -1,0 +1,187 @@
+.top{
+  //background: #665464;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 150px 0;
+  .top__carousel{
+    margin-top: -80px;
+    margin-right: 50px;
+    min-width: 550px;
+    min-height: 400px;
+    .top__carousel-box {
+      text-align: center;
+      padding: 4em 0;
+      max-width: 550px;
+      max-height: 400px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      .slides {
+        width: 400%;
+        left: 0;
+        padding-left: 0;
+        padding-top: 1em;
+        overflow: hidden;
+        list-style: none;
+        position: relative;
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -o-transition: transform .5s;
+        transition: transform .5s;
+        li {
+          width: 25%;
+          position: relative;
+          float: left;
+        }
+      }
+      li {
+        max-height: 330px;
+        opacity: 0.8;
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        h2{
+          margin: 20px 0;
+          text-align: center;
+          color: #60606e;
+          font-family: $second-font;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 30px;
+        }
+        .carousel_btn{
+          color: #ffffff;
+          font-family: $main-font;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          width: 130px;
+          height: 20px;
+          background-color: #7beec7;
+          padding-bottom: 20px;
+          &:hover{
+            background: #2CFFB9;
+            color: $second-color;
+          }
+        }
+      }
+      .slidesNavigation {
+        display: block;
+        list-style: none;
+        text-align: center;
+        bottom: 1em;
+        position: absolute;
+        width: 200px;
+        left: 50%;
+        margin-left: -65px;
+      }
+      input {
+        display: none;
+      }
+      .slidesNavigation label {
+        float: left;
+        margin: 10px;
+        display: block;
+        height: 1px;
+        width: 13px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #60606e;
+        outline: 1px solid #60606e;
+        font-size: 0;
+      }
+    }
+
+    #radio-1:checked ~ .slides {
+      transform: translateX(0%);
+    }
+
+    #radio-2:checked ~ .slides {
+      transform: translateX(-25%);
+    }
+
+    #radio-3:checked ~ .slides {
+      transform: translateX(-50%);
+    }
+
+    #radio-4:checked ~ .slides {
+      transform: translateX(-75%);
+    }
+
+    .top__carousel-box {
+      .slidesNavigation label:hover {
+        cursor: pointer;
+      }
+      #radio-1:checked ~ .slidesNavigation label#dotForRadio-1, #radio-2:checked ~ .slidesNavigation label#dotForRadio-2, #radio-3:checked ~ .slidesNavigation label#dotForRadio-3, #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+        background-color: #7beec7;
+        width: 35px;
+        height: 1px;
+        outline: 2px solid #7beec7;
+        //margin-top: 15px;
+      }
+    }
+  }
+  .top__clients{
+    width: 555px;
+    min-height: 230px;
+    //background: #ffcccf;
+    .clients{
+      .banner_wr{
+        .banner{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          li{
+            img{
+              margin: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  .top{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .top__carousel{
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  .top{
+    .top__carousel{
+      min-width: 300px;
+      .top__carousel-box {
+        max-width: 300px;
+        max-height: 400px;
+        li {
+          max-height: 330px;
+          h2{
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .top__clients{
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      img{
+        margin: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.newsletter{
+  padding: 50px 0;
+  background: $top-color;
+  .banner_wr{
+    .banner{
+      li{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .work_together{
+          max-width: 550px;
+          margin-right: 50px;
+          h3{
+            color: $second-color;
+            font-family: $main-font;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 48px;
+            text-transform: uppercase;
+          }
+          .newsletter_btn{
+            margin-top: 20px;
+            border: none;
+            border-radius: 0;
+            width: 165px;
+            height: 49px;
+            background-color: $second-color;
+            color: $top-color;
+            font-family: $main-font;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            &:hover{
+              background: #2CFFB9;
+              color: $second-color;
+            }
+          }
+        }
+        .form{
+          max-width: 510px;
+          background: $second-color;
+          padding: 10px 30px 20px 20px;
+          h4{
+            color: $main-color;
+            font-family: $main-font;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            text-transform: uppercase;
+          }
+          p{
+            color: #999999;
+            font-family: $second-font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+          form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input{
+              border-radius: 0;
+              padding-left: 20px;
+              width: 400px;
+              height: 50px;
+              color: #cdcdcd;
+              font-family: $main-font;
+              font-size: 12px;
+              font-weight: 600;
+              line-height: 48px;
+              text-transform: uppercase;
+            }
+            .form_btn{
+              border: none;
+              border-radius: 0;
+              width: 135px;
+              height: 50px;
+              background-color: #7beec7;
+              color: $second-color;
+              font-family: $main-font;
+              font-size: 14px;
+              font-weight: 700;
+              text-transform: uppercase;
+              &:hover{
+                background: #2CFFB9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1100px){
+  .newsletter{
+    .banner_wr{
+      .banner{
+        li{
+          .work_together{
+            max-width: 450px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .newsletter{
+    .banner_wr{
+      .banner{
+        li{
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          .work_together{
+            max-width: 300px;
+            margin-right: 20px;
+            h3{
+              font-size: 25px;
+              line-height: 35px;
+            }
+          }
+          .form{
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .newsletter{
+    .banner_wr{
+      .banner{
+        li{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .work_together{
+            max-width: 300px;
+            margin-right: 0;
+            text-align: center;
+            h3{
+              font-size: 25px;
+              line-height: 35px;
+            }
+          }
+          .form{
+            margin-top: 20px;
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
+}

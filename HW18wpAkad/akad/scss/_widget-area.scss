@@ -1,0 +1,150 @@
+.widget-area{
+  max-width: 260px;
+  .search-form{
+    display: flex;
+    .search-field{
+      border-radius: 0;
+      border: none;
+      width: 200px;
+      height: 40px;
+      color: #60606e;
+      background: #E6E6E6;
+      font-family: $main-font;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-left: 15px;
+    }
+    .search-submit{
+      width: 80px;
+      height: 40px;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      color: #60606e;
+      background: #E6E6E6;
+      font-family: $main-font;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      &:hover{
+        color: #2CFFB9;
+      }
+    }
+  }
+  .widget_recent_entries{
+    h2{
+      color: $main-color;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+    }
+    ul{
+      li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        a{
+          text-decoration: none;
+          color: $main-color;
+          font-family: $main-font;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 18px;
+          text-transform: uppercase;
+          &:hover{
+            color: #2CFFB9;
+          }
+        }
+        .post-date{
+          color: #9a9a9a;
+          font-family:  $second-font;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+  .widget_categories{
+    h2{
+      color: #60606e;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+    }
+    ul{
+      li{
+        a{
+          text-decoration: none;
+          color: #60606e;
+          font-family: $second-font;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 30px;
+          &:hover{
+            color: #2CFFB9;
+          }
+        }
+      }
+    }
+  }
+  .widget_tag_cloud{
+    h2{
+      color: #60606e;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+    }
+    .tag-cloud-link{
+      text-decoration: none;
+      color: #999999;
+      font-family: $main-font;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+      &:hover{
+        color: #2CFFB9;
+      }
+    }
+
+  }
+  .widget_archive{
+    h2{
+      color: #60606e;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+    }
+    ul{
+      li{
+        a{
+          text-decoration: none;
+          color: #60606e;
+          font-family: $second-font;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 30px;
+          &:hover{
+            color: #2CFFB9;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .widget-area{
+    display: none;
+  }
+}

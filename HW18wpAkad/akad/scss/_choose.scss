@@ -1,0 +1,118 @@
+.choose{
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .choose_title{
+    text-align: center;
+    h2{
+      color: #60606e;
+      font-family: $main-font;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+    }
+    .title_text{
+      color: #60606e;
+      font-family: $second-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  .banner_wr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    .banner{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 700px;
+      //outline: 2px solid #0A246A;
+      li{
+        max-width: 250px;
+        //outline: 2px solid #00d084;
+        margin: 30px 15px;
+        .choose_box{
+          h3{
+            color: $main-color;
+            font-family: $main-font;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 48px;
+            text-transform: uppercase;
+          }
+        }
+        p{
+          color: #999999;
+          font-family: $second-font;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 30px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .choose{
+    .banner_wr{
+      img{
+        zoom: 80%;
+      }
+      .banner{
+        max-width:600px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .choose{
+    .choose_title{
+      max-width: 650px;
+    }
+    .banner_wr{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      img{
+        zoom: 80%;
+      }
+      .banner{
+        justify-content: space-between;
+        align-items: center;
+        li{
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+ .choose{
+    .choose_title{
+      min-width: 300px;
+    }
+    .banner_wr{
+      img{
+        zoom: 60%;
+      }
+      .banner{
+        justify-content: center;
+        max-width:300px;
+        li{
+          margin: 15px 0;
+
+          p{
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
