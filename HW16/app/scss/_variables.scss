@@ -1,0 +1,63 @@
+$main-font: 'Roboto Condensed', sans-serif;
+$second-font: 'Open Sans', sans-serif;
+$third-font: 'Roboto', sans-serif;
+
+$main-color: #fff;
+$second-color: #000;
+$third-color: #fffefe;
+$post-color: #333;
+
+//$second-color:;
+//$third-color
+
+@mixin headline_blog{
+  font: {
+    family: $main-font;
+    size: 26px;
+    weight: 400;
+  }
+  color: $main-color;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+@mixin text_blog{
+  font: {
+    family: $main-font;
+    size: 14px;
+    weight: 300;
+  }
+  color: $main-color;
+}
+@mixin counter_text{
+  font: {
+    family: $main-font;
+    size: 12px;
+    weight: 300;
+  }
+  color: $third-color;
+  letter-spacing: 1.2px;
+}
+@mixin footer_text{
+  font: {
+    family: $second-font;
+    size: 13px;
+    weight: 400;
+  }
+  color: $second-color;
+  line-height: 16px;
+}
+@mixin headline_post{
+  font: {
+    family: $main-font;
+    size: 28px;
+    weight: 400;
+  }
+  color: $post-color;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+
+
+

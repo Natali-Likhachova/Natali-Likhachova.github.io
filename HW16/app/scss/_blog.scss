@@ -1,0 +1,198 @@
+.blog{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .wrapper{
+    max-width: 1120px;
+  }
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .list_item{
+      width: 360px;
+      .list_item_box{
+        height: 745px;
+        background: #362F2F;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .text{
+          width: 360px;
+          height: 385px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          h2{
+            padding-top: 20px;
+            max-width: 320px;
+            @include headline_blog;
+          }
+          .text_blog{
+            max-width: 350px;
+            @include text_blog;
+          }
+          .blog_btm{
+            margin: 30px 0;
+            width: 180px;
+            height: 30px;
+            margin-left: 80px;
+            color: $main-color;
+            font-family: $main-font;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            background-repeat: no-repeat;
+            background-color: #c3a000;
+          }
+          .text_below{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0;
+            .publication_date{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0 10px;
+              .fa{
+                color: $main-color;
+              }
+              p{
+                padding: 0 5px;
+                @include counter_text;
+              }
+            }
+            .number_of_comments{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0 10px;
+              .fa{
+                color: $main-color;
+              }
+              p{
+                padding: 0 5px;
+                @include counter_text;
+              }
+            }
+          }
+        }
+      }
+      .dark{
+        background: $second-color;
+      }
+      .line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+      }
+    }
+  }
+  .navigations{
+    display: flex;
+    justify-content: center;
+    .page{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 450px;
+      padding: 30px 0;
+      .page_btn{
+        width: 80px;
+        height: 40px;
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        background-repeat: no-repeat;
+        background-color: #362F2F;
+      }
+      .page_list{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        .page_item{
+          color: #202020;
+          font-family: $main-font;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+  .up{
+    margin-left: 95%;
+    padding: 30px 0;
+    .up_btn{
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-repeat: no-repeat;
+      background-color: #362F2F;
+      a{
+        text-decoration: none;
+        color: $main-color;
+      }
+      .fa-angle-up{
+        zoom: 120%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  .blog{
+    .wrapper{
+      max-width: 950px;
+      .list{
+        justify-content: space-around;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .blog{
+    .wrapper{
+      max-width: 700px;
+      .list{
+        justify-content: space-around;
+        .list_item{
+          width: 300px;
+          img{
+            zoom: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .blog{
+    .wrapper{
+      max-width: 300px;
+      .list{
+        justify-content: space-around;
+        .list_item{
+          width: 270px;
+          img{
+            zoom: 80%;
+          }
+        }
+      }
+      .navigations{
+        .page{
+          min-width: 300px;
+        }
+      }
+      .up{
+        margin-left: 80%;
+
+      }
+    }
+  }
+}

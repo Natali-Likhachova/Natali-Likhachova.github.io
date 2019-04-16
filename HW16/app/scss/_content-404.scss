@@ -1,0 +1,21 @@
+.content-404{
+  .box-404{
+    text-align: center;
+    padding: 100px;
+    p{
+      @include headline_blog;
+      color: #000000;
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .content-404{
+    .box-404{
+      text-align: center;
+      padding: 50px;
+      p{
+        font-size: 30px;
+      }
+    }
+  }
+}

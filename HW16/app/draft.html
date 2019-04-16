@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>draft</title>
+</head>
+<body>
+
+<?php if (have_posts() ) : while (have_posts() ) : the_post(); ?>
+<?php endwhile; ?>
+<div class="recent_item">
+    <?php the_post_thumbnail('full')?>
+    <div class="recent_text">
+        <h3>
+            <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+            </a>
+        </h3>
+        <p class="recent_data">
+            <?php the_date('d.m.Y')?>
+        </p>
+        <p class="text_item">
+            <?php the_excerpt(); ?>.
+            <span class="text_item_more">
+                                read more
+                            </span>
+        </p>
+    </div>
+</div>
+<?php else: ?>
+<?php endif; ?>
+
+<div class="recent_item">
+    <img src="<?php bloginfo('template_url')?>/img/post/bottom/1.png" alt="">
+    <div class="recent_text">
+        <h3>
+            New Gallery Set
+        </h3>
+        <p class="recent_data">
+            09.12.2014
+        </p>
+        <p class="text_item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
+            venenatis ante venenatis eget.
+            <span class="text_item_more">
+                                read more
+                            </span>
+        </p>
+    </div>
+</div>
+
+<div class="recent_item">
+    <img src="<?php bloginfo('template_url')?>/img/post/bottom/2.png" alt="">
+    <div class="recent_text">
+        <h3>
+            wedding workshop
+        </h3>
+        <p class="recent_data">
+            09.12.2014
+        </p>
+        <p class="text_item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
+            venenatis ante venenatis eget.
+            <span class="text_item_more">
+                                    read more
+                                </span>
+        </p>
+    </div>
+</div>
+
+<div class="recent_item">
+    <img src="<?php bloginfo('template_url')?>/img/post/bottom/3.png" alt="">
+    <div class="recent_text">
+        <h3>
+            Personal Project
+        </h3>
+        <p class="recent_data">
+            09.12.2014
+        </p>
+        <p class="text_item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
+            venenatis ante venenatis eget.
+            <span class="text_item_more">
+                                        read more
+                                    </span>
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+.post{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .post_box{
+    max-width: 740px;
+    h1{
+      max-width: 715px;
+      padding: 10px;
+      @include headline_post;
+    }
+    .counts{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 20px 0;
+      .publication_date{
+        display: flex;
+        p{
+          margin: 0 10px;
+          color: #333333;
+          font-family: $main-font;
+          font-size: 12px;
+          font-style: italic;
+          line-height: 20px;
+          font-weight: 600;
+        }
+      }
+      .number_of_comments{
+        display: flex;
+        p{
+          margin: 0 10px;
+          color: #000000;
+          font-family: $main-font;
+          font-size: 14px;
+          font-style: italic;
+          line-height: 20px;
+          font-weight: 600;
+        }
+      }
+      .like{
+        display: flex;
+        p{
+          margin: 0 10px;
+          color: #000000;
+          font-family: $main-font;
+          font-size: 12px;
+          font-style: italic;
+          line-height: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+    .post_text{
+      max-width: 715px;
+      padding: 10px;
+      color: #000000;
+      font-family: $main-font;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22.4px;
+      .bolt{
+        font-weight: bold;
+      }
+      .italic{
+        font-style: italic;
+      }
+      .uppercase{
+        text-transform: uppercase;
+      }
+    }
+  }
+  .post_social{
+    max-width: 740px;
+  }
+  .post_comments{
+    max-width: 740px;
+  }
+  .post_social{
+    background: #F8F8F8;
+    min-width: 740px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .post_social_part{
+      display: flex;
+      padding: 0 40px;
+      h2{
+        color: #333333;
+        font-family: $main-font;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 22.4px;
+        text-transform: uppercase;
+      }
+      i{
+        margin: 0 15px;
+      }
+    }
+    img{
+      margin: 0 60px;
+      width: 18px;
+      height: 14px;
+    }
+  }
+  .post_comments{
+    .comments{
+      padding: 50px 0;
+      h3{
+        color: $post-color;
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20.8px;
+      }
+      .comments_list{
+        .comments_item{
+          margin-top: 20px;
+          .item_headline{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .item_headline-part{
+              display: flex;
+              h4{
+                color: $post-color;
+                font-family: $main-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20.8px;
+              }
+              .data-part{
+                padding-left: 20px;
+                color: #7f8c8c;
+                font-family: $main-font;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20.8px;
+              }
+            }
+            .item_part{
+              display: flex;
+              .fa-undo{
+                padding: 0 10px;
+              }
+              .reply-part{
+                padding-right: 60px;
+                color: $post-color;
+                font-family: $main-font;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20.8px;
+                text-transform: uppercase;
+              }
+            }
+          }
+          .item_main{
+            background: #F8F8F8;
+            display: flex;
+            align-items: center;
+            .item_main-text{
+              padding: 8px 10px 10px 10px;
+              color: $second-color;
+              font-family: $main-font;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 20px;
+            }
+          }
+        }
+        .small_item{
+          max-width: 95%;
+          margin-left: 5%;
+        }
+      }
+    }
+    .form{
+      h3{
+        color: $post-color;
+        font-family: $main-font;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20.8px;
+      }
+      form{
+        .form_up{
+          .form_left{
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input{
+              margin-left: -55px;
+              padding-left: 10px;
+              width: 330px;
+              height: 40px;
+              border: 1px solid #000000;
+              color: #aaaaaa;
+              font-family: $main-font;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 20.8px;
+            }
+          }
+          .form_right{
+            display: flex;
+            justify-content: space-between;
+            input{
+              margin-left: -55px;
+              padding-left: 10px;
+              width: 330px;
+              height: 40px;
+              border: 1px solid #000000;
+              color: #aaaaaa;
+              font-family: $main-font;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 20.8px;
+            }
+          }
+        }
+        .form_bottom{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          input{
+            padding-left: 10px;
+            margin-top: 30px;
+            margin-left: -85px;
+            width: 475px;
+            height: 187px;
+            border: 1px solid #000000;
+            color: #aaaaaa;
+            font-family: $main-font;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20.8px;
+          }
+          .form_btn{
+            margin-top: 10px;
+            width: 170px;
+            height: 35px;
+            color: $main-color;
+            font-family: $main-font;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            background-repeat: no-repeat;
+            background-color: #362F2F;
+          }
+        }
+      }
+      .form_text{
+        padding: 30px 0;
+        color: $post-color;
+        font-family: $main-font;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16.8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  .post{
+    .post_box{
+      max-width: 300px;
+      h1{
+        max-width: 300px;
+      }
+      img{
+        zoom: 40%;
+      }
+      .post_text{
+        max-width: 300px;
+      }
+    }
+    .post_social{
+      max-width: 300px;
+      min-width: 280px;
+    }
+    .post_comments{
+      max-width: 300px;
+      .form{
+
+        form{
+          .form_up{
+            .form_left{
+              input{
+                margin-left: -10px;
+                width: 135px;
+              }
+            }
+            .form_right{
+              input{
+                margin-left: -10px;
+                width: 135px;
+              }
+            }
+          }
+          .form_bottom{
+            display: flex;
+            flex-direction: column;
+            input{
+              padding-left: 10px;
+              margin-top: 20px;
+              margin-left: -85px;
+              width: 290px;
+              height: 100px;
+            }
+            .form_btn{
+              width: 170px;
+              height: 35px;
+              color: $main-color;
+              font-family: $main-font;
+              font-size: 12px;
+              font-weight: 700;
+              text-transform: uppercase;
+              border: none;
+              background-repeat: no-repeat;
+              background-color: #362F2F;
+            }
+          }
+        }
+        .form_text{
+          padding: 30px 0;
+          color: $post-color;
+          font-family: $main-font;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 16.8px;
+        }
+      }
+    }
+  }
+}
