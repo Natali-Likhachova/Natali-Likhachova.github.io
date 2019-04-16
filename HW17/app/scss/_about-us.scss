@@ -1,0 +1,245 @@
+.about-us{
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .about-us_top{
+    max-width: 800px;
+    text-align: center;
+    h2{
+      color: #343434;
+      font-family: $main-font;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+    h3{
+      padding: 30px 0;
+      color: #afafaf;
+      font-family: $main-font;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  .about-us_bottom{
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    .bottom_up{
+      display: flex;
+      justify-content: space-between;
+      .do{
+        max-width: 460px;
+        h4{
+          @include headline-page;
+        }
+        .about-us_red-line::before{
+          @include about-us_red-line;
+        }
+        .do_text{
+          color: #343434;
+          font-family: $main-font;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 22px;
+        }
+      }
+      .our-clients{
+        max-width: 450px;
+        .our-clients_header{
+          h4{
+            @include headline-page;
+          }
+          .about-us_red-line::before{
+            @include about-us_red-line;
+          }
+        }
+        .our-clients_carousel{
+          img{
+            zoom: 75%;
+          }
+        }
+      }
+    }
+    .bottom_end{
+      .our-team{
+        .our-team_header{
+          h4{
+            @include headline-page;
+          }
+          .about-us_red-line::before{
+            @include about-us_red-line;
+          }
+        }
+        .our-team_team{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          img{
+            zoom: 79%;
+          }
+          .img-hover-text {
+            margin: auto;
+            position: relative;
+            img {
+              width: 100%;
+              transition: .5s;
+            }
+            figcaption {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              bottom: 0;
+              left: 0;
+              opacity: 0;
+              transition: .5s;
+              h6{
+                padding: 10px;
+                color: #fff;
+                font-family: $main-font;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 30px;
+              }
+              .hover-line{
+                width: 130px;
+                height: 1px;
+                margin: 30px 0 10px 10px;
+                content: '';
+                display: block;
+                background-color: #bb3030;
+              }
+              .hover_text_first{
+                padding-left: 10px;
+                color: #ffffff;
+                font-family: $main-font;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 10px;
+              }
+              .hover_text_second{
+                padding-left: 10px;
+                color: #ffffff;
+                font-family: $main-font;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 24px;
+              }
+            }
+            &:hover {
+              figcaption {
+                opacity: 1;
+                background: #FE504F;
+              }
+              img {
+                filter: brightness(70%);
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 900px){
+  .about-us{
+    .about-us_top{
+      max-width: 650px;
+    }
+    .about-us_bottom{
+      .bottom_up{
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .bottom_end{
+        .our-team{
+          .our-team_header{
+            padding-left: 60px;
+          }
+          .our-team_team{
+            img{
+              zoom: 63%;
+            }
+            .img-hover-text {
+              margin: auto;
+              position: relative;
+              img {
+                width: 100%;
+                transition: .5s;
+              }
+              figcaption {
+                h6{
+                  font-size: 20px;
+                  line-height: 20px;
+                }
+                .hover-line{
+                  width: 110px;
+                  margin: 10px 0 10px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .about-us{
+    .about-us_top{
+      max-width: 300px;
+      h3{
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+    .about-us_bottom{
+      .bottom_up{
+        justify-content: center;
+        flex-wrap: wrap;
+        .do{
+          max-width: 300px;
+        }
+        .our-clients{
+          max-width: 300px;
+          .our-clients_carousel{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+          }
+        }
+      }
+      .bottom_end{
+        .our-team{
+          .our-team_team{
+            img{
+              zoom: 80%;
+            }
+            .img-hover-text {
+              figcaption {
+                h6{
+                  font-size: 25px;
+                  line-height: 30px;
+                }
+                .hover-line{
+                  width: 130px;
+                  margin: 30px 0 10px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+.feedback{
+  background: url("../img/index/feedback/1bg.png") no-repeat;
+  background-size: cover;
+  height: 816px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  .feedback_left{
+    margin-top: 80px;
+    max-width: 500px;
+    min-height: 400px;
+    .left_text{
+      h3{
+        color: #fe504f;
+        font-family: $main-font;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: uppercase;
+      }
+      .left_text-thank{
+        padding-top: 30px;
+        color: #ffffff;
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .feedback_red-line::before{
+        width: 61px;
+        height: 3px;
+        margin: 30px 0 30px 0;
+        content: '';
+        display: block;
+        background-color: $top-color;
+      }
+    }
+    .our_contact{
+      .our_contact-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 15px;
+        .our_contact-item-text{
+          padding-left: 15px;
+          color: #ffffff;
+          font-family: $main-font;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 20px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .feedback_right{
+    margin-top: 80px;
+    max-width: 450px;
+    min-height: 400px;
+    .right_text{
+      h3{
+        color: #fe504f;
+        font-family: $main-font;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .feedback_red-line::before{
+        width: 61px;
+        height: 3px;
+        margin: 10px 0 20px 0;
+        content: '';
+        display: block;
+        background-color: $top-color;
+      }
+      .right_text_instructions{
+        padding-bottom: 40px;
+        color: #ffffff;
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    input{
+      margin: 5px 0;
+      padding-left: 10px;
+      width: 445px;
+      height: 35px;
+      color: #afafaf;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 400;
+      background: transparent;
+      border: 1px solid #aeaeae;
+    }
+    .message{
+      padding-bottom: 170px;
+    }
+
+    .feedback_btn{
+      margin: 20px 0 0 280px;
+      width: 180px;
+      height: 50px;
+      margin-right: 30px;
+      background: #343434;
+      border: none;
+      border-radius: 90px;
+      color: $main-color;
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 400;
+      &:hover{
+        background: #FE504F;
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 1100px){
+  .feedback{
+    .feedback_left{
+      max-width: 480px;
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .feedback{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .feedback_left{
+      max-width: 480px;
+      margin-top: 30px;
+      min-height: 230px;
+      .left_text{
+        .left_text-thank{
+          padding-top: 10px;
+          font-size: 13px;
+          line-height: 15px;
+        }
+        .feedback_red-line::before{
+          margin: 12px 0 12px 0;
+        }
+      }
+      .our_contact{
+        .our_contact-item{
+          margin-bottom: 5px;
+          .our_contact-item-text{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .feedback_right{
+      margin-top: 30px;
+      max-width: 450px;
+      min-height: 400px;
+      .right_text{
+        .feedback_red-line::before{
+          margin: 12px 0 12px 0;
+        }
+        .right_text_instructions{
+          padding-bottom: 15px;
+          font-size: 13px;
+        }
+      }
+      input{
+        height: 30px;
+      }
+      .message{
+        padding-bottom: 70px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .feedback{
+    .feedback_left{
+      max-width: 300px;
+    }
+    .feedback_right{
+      max-width: 300px;
+      input{
+        height: 30px;
+        width: 280px;
+      }
+      .message{
+        padding-bottom: 50px;
+      }
+      .feedback_btn{
+        margin: 10px 0 0 110px;
+        width: 160px;
+        height: 40px;
+      }
+    }
+  }
+}

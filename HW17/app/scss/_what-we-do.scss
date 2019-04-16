@@ -1,0 +1,59 @@
+.what-we-do{
+  background: url("../img/index/what-we-do/3-layers.png") no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  img{
+    margin-bottom: 20px;
+  }
+  h2{
+    max-width: 950px;
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
+  }
+  h3{
+    max-width: 950px;
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 900px){
+  .what-we-do{
+    h2{
+      max-width: 650px;
+      font-size: 25px;
+      line-height: 40px;
+    }
+    h3{
+      margin-top: 20px;
+      max-width: 650px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .what-we-do{
+    h2{
+      max-width: 300px;
+      font-size: 18px;
+      line-height:25px;
+      font-weight: 600;
+    }
+    h3{
+      max-width: 300px;
+      font-size: 12px;
+    }
+  }
+}

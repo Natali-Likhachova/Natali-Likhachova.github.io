@@ -1,0 +1,53 @@
+.contact{
+  background: url("../img/index/contact/bg.png") no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h2{
+    max-width: 950px;
+    color: #ffffff;
+    font-family: $main-font;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
+  }
+  .contact_btn{
+    margin-top: 30px;
+    width: 215px;
+    height: 65px;
+    background-color: #343434;
+    color: #ffffff;
+    font-family: $main-font;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    border-radius: 45px;
+    &:hover{
+      background: #FE504F;
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .contact{
+    h2{
+      max-width: 650px;
+      font-size: 22px;
+      line-height: 35px;
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .contact{
+    h2{
+      max-width: 300px;
+      font-size: 15px;
+      line-height: 45px;
+    }
+  }
+}

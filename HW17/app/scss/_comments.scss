@@ -1,0 +1,112 @@
+.comments{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .comments__main{
+    max-width: 950px;
+    h3{
+      color: #000000;
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 10px;
+    }
+    .comments_red-line::before {
+      margin: 10px 0;
+      content: '';
+      display: block;
+      height: 4px;
+      background-color: $top-color;
+      width: 115px;
+    }
+    form{
+      padding: 20px 0;
+    }
+    input{
+      width: 750px;
+      height: 35px;
+      padding-left: 15px;
+    }
+    .comments_btn{
+      margin-left: 33px;
+      width: 143px;
+      height: 40px;
+      color: #fd6041;
+      font-family: $main-font;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      text-transform: uppercase;
+      background: #343434;
+      border: none;
+      &:hover{
+        color: #ffffff;
+        background: #fd6041;
+      }
+    }
+    .comment-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      .comment-box-text{
+        padding-left: 10px;
+        h4{
+          color: #000000;
+          font-family: $main-font;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 21px;
+        }
+        p{
+          color: #8c8c8c;
+          font-family: $main-font;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+    }
+    .answer{
+      padding-right: 250px;
+    }
+    .answer_answer{
+      padding-left: 120px;
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .comments{
+    .comments__main{
+      max-width: 650px;
+      input{
+        width: 450px;
+        height: 35px;
+        padding-left: 15px;
+      }
+      .answer{
+        padding-right: 0;
+        padding-left: 60px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .comments{
+    .comments__main{
+      max-width: 300px;
+      input{
+        width: 270px;
+        height: 35px;
+      }
+      .comments_btn{
+        margin: 10px 0 10px 75px;
+      }
+      .answer{
+        padding-right: 0;
+        padding-left: 60px;
+      }
+    }
+  }
+}

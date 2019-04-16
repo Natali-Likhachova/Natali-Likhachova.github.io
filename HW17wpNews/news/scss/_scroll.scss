@@ -1,0 +1,21 @@
+.scroll{
+  padding: 50px 0;
+  background: #E2EE83;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .scroll__text{
+    max-width: 50px;
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  /*#scroll-btn{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+  }*/
+}

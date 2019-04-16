@@ -1,0 +1,135 @@
+.top{
+  background: url("../img/post/top/2-layers.png") no-repeat;
+  background-size: cover;
+  height: 656px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 30px;
+  img{
+    position	: relative;
+    zoom: 87%;
+  }
+  .top_text{
+    position: absolute;
+    padding: 15px 15px 10px 15px;
+    background: #343434;
+    margin-left: -287px;
+    .arrow_box {
+      position: relative;
+    }
+    .arrow_box:after, .arrow_box:before {
+      bottom: 100%;
+      left: 8%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .arrow_box:after {
+      border-color: rgba(136, 183, 213, 0);
+      border-bottom-color: #343434;
+      border-width: 30px;
+      margin-left: -30px;
+    }
+    .arrow_box:before {
+      border-color: rgba(194, 225, 245, 0);
+      border-bottom-color: #343434;
+      border-width: 36px;
+      margin-left: -36px;
+    }
+    h1{
+      color: $top-color;
+      font-family: $main-font;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+    .post_red-line::before {
+      margin-top: 10px;
+      content: '';
+      display: block;
+      height: 4px;
+      background-color: $top-color;
+      margin-bottom: 10px;
+      width: 60px;
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  .top{
+    height: 456px;
+    img{
+      zoom: 75%;
+    }
+    .top_text{
+      margin-left: -265px;
+
+      h1{
+        font-size: 16px;
+      }
+      .post_red-line::before {
+        margin-top: 5px;
+        width: 50px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .top{
+    height: 356px;
+    img{
+      zoom: 60%;
+    }
+    .top_text{
+      margin-left: -175px;
+    }
+  }
+}
+@media screen and (max-width: 575.98px){
+  .top{
+    height: 300px;
+    img{
+      zoom: 25%;
+    }
+    .top_text{
+      position: relative;
+      padding: 5px 20px;
+      margin: 0 0 0 0;
+      .arrow_box:after, .arrow_box:before {
+        bottom: 100%;
+        left: 10%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .arrow_box:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: #343434;
+        border-width: 25px;
+        margin-left: -25px;
+      }
+      .arrow_box:before {
+        border-width: 20px;
+        margin-left: -20px;
+      }
+      h1{
+        font-size: 12px;
+        line-height: 20px;
+      }
+      .post_red-line::before {
+        margin-top: 5px;
+        height: 2px;
+      }
+    }
+  }
+}
