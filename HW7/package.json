@@ -9,7 +9,7 @@
   "author": "Natali",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
